@@ -58,13 +58,13 @@ You can use the generated images and labels as training data. In our experiment,
 ```
 CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py --dataset helen --model psp --backbone resnet50 --aux --batch-size 16 --output_nc --epoch 30
 ```
-We provide the mannually annotated caricature dataset in Google Drive (https://drive.google.com/open?id=1x0bJ7wBAsC\_jSjm30SIqjl-huuBZMKh6)
+We provide the mannually annotated caricature dataset in Google Drive (https://drive.google.com/open?id=1x0bJ7wBAsC_jSjm30SIqjl-huuBZMKh6)
 
 ```
 python test.py --dataset cari --model psp --backbone resnet50 --aux --eval --resume=runs/helen/psp/default/model_best.pth.tar
 ```
 
-We also provide the pretrained segmentation, style adaptation and shape adaptation models in Google Drive (https://drive.google.com/open?id=1x0bJ7wBAsC\_jSjm30SIqjl-huuBZMKh6)
+We also provide the pretrained segmentation, style adaptation and shape adaptation models in Google Drive (https://drive.google.com/open?id=1x0bJ7wBAsC_jSjm30SIqjl-huuBZMKh6)
 
 
 ## Reference
